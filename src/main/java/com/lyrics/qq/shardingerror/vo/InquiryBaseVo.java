@@ -20,7 +20,7 @@ public class InquiryBaseVo {
      * 开始时间
      */
     @ApiModelProperty(value = "开始时间 eg format yyyy-MM-dd",required = true)
-    @DateTimeFormat(pattern = "yyyy-MM-dd  ")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date startTime;
     /**
      * 结束时间
