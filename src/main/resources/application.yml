@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: test
+  application:
+    name: mp-server
+  logpath: /home/wontex/logs/
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 20MB
+server:
+  port: 8080
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  type-aliases-package: com.lyrics.qq.shardingerror.entity
+  global-config:
+    db-config:
+      logic-delete-value: 0
+      logic-not-delete-value: 1
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false
+  type-enums-package: com.lyrics.qq.shardingerror.commonenum
+  executor-type: simple
+swagger:
+  enable: true
+  base-package: com.lyrics.qq
