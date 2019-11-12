@@ -25,7 +25,7 @@ public class InquiryBaseVo {
     /**
      * 结束时间
      */
-    @ApiModelProperty(value = "结束时间 eg format yyyy-MM-dd ",required = true)
+    @ApiModelProperty(value = "结束时间 eg format yyyy-MM-dd",required = true)
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date endTime;
 }
